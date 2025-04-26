@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Theo sự kiện mình bấm một hoặc hai lần</h1>
+<h2>The addEventListener() Method</h2>
+
+<p>Add two click events to the same button.</p>
+
+<button id="myBtn">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+const element = document.getElementById("myBtn");
+element.addEventListener("click", myFunction1);
+element.addEventListener("click", myFunction2);
+
+function myFunction1() {
+  document.getElementById("demo").innerHTML += "Bạn Nam có giỏi môn thể thao nào không "
+}
+
+function myFunction2() {
+  document.getElementById("demo").innerHTML += "À tớ giỏi môn cầu lông"
+}
+</script>
+<a href="baitaap.html">Back</a>
+</body>
+</html>
